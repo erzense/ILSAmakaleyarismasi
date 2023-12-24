@@ -9,13 +9,6 @@ const postHomepage = async (req, res) => {
   const { isim, soyisim, mailadresi, universite, sinif, phonenumber } =
     req.body;
   const yarismacinumber = parseInt(phonenumber) - 999999999;
-  if (typeof phonenumber === "string") {
-    return res
-      .status(400)
-      .send(
-        `<h1>Telefon Numarasında hatalı karakter girdiniz lütfen yeniden denemek için <a href="/">linke tıklayınız</a><h1>`
-      );
-  }
 
   const yarismaci = await Yarismacilar.create({
     isim,
