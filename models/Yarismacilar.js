@@ -5,13 +5,11 @@ const yarismacilar = new mongoose.Schema({
   soyisim: String,
   mailadresi: {
     type: String,
-    unique: false,
   },
   universite: String,
   sinif: String,
   phonenumber: {
     type: Number,
-    unique: false,
     set: (v) =>
       v && typeof v === "string" && v.startsWith("0")
         ? parseInt(v.substring(1))
