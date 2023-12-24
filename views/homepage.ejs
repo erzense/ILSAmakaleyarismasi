@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oğuzman Makale Yarışması</title>
+    <link rel="stylesheet" href="../css/global.css" />
+  </head>
+  <body>
+    <nav>
+      <button class="toggle-btn"><i class="toggle-btn bi bi-list"></i></button>
+      <div class="logolar">
+        <img src="../images/iu.png" alt="" class="logo" />
+        <img src="../images/iuhf.jfif" alt="" class="logo" />
+        <img src="../images/ilsa.png" alt="" class="logo" />
+      </div>
+      <div class="anchor-links">
+        <ul>
+          <a href="#hakkinda"><li>Hakkında</li></a>
+          <a href="#juriler"><li>Jüri Üyeleri</li></a>
+          <a href="#apply"><li>Başvuru</li></a>
+          <a href="#contact"><li>İletişim</li></a>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="hakkinda">
+      <div class="about">
+        <img src="../images/terazi.jfif" alt="" class="terazifoto" />
+        <img src="../images/afis.jfif" alt="" class="afis" />
+        <div class="aboutext">
+          <h1>HAKKINDA</h1>
+          <p>
+            31 yıldır İstanbul Üniversitesi Hukuk Fakültesi ILSA Uluslararası
+            Hukuk Kulübü olarak Türk Hukuku ve Uluslararası Hukuk düzleminde
+            hukuk öğrencilerine yönelik faaliyet göstermekteyiz. <br />
+            <br />
+            ILSA Akademi Komitesi olarak her sene gelenekselleşme yolunda emin
+            adımlarla ilerleyen Prof. Dr. M. Kemal Oğuzman İstanbul Hukuk Makale
+            Yarışması'nın bu sene de altıncısını düzenlemekten mutluluk ve gurur
+            duyuyoruz. Ulusal çapta düzenlediğimiz Makale Yarışmamız ile Prof.
+            Dr. M. Kemal Oğuzman’ın adını yaşatmayı ve hukuk fakültesi
+            öğrencilerine İstanbul Üniversitesi Hukuk Fakültesi Medeni Hukuk Ana
+            Bilim Dalı profesörlerinin değerlendirme sürecinden geçen bir yazma
+            deneyimi kazandırmayı amaçlamaktayız.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="juriler" class="juriler">
+      <h2 class="juri-baslik">JÜRİ ÜYELERİ</h2>
+      <div class="juri-uye">
+        <img src="../images/juri1.jpg" alt="Jüri Üye 2" />
+        <h5>Jüri Başkanı</h5>
+        <p>Mehmet Tufan ÖĞÜZ</p>
+      </div>
+      <div class="juri-listesi">
+        <div class="juri-uye">
+          <img src="../images/juri2.jfif" alt="Jüri Üye 2" />
+          <p>Prof. Dr. Saibe Oktay ÖZDEMİR</p>
+        </div>
+        <div class="juri-uye">
+          <img src="../images/juri3.jfif" alt="Jüri Üye 3" />
+          <p>Prof. Dr. İlhan HELVACI</p>
+        </div>
+        <div class="juri-uye">
+          <img src="../images/juri4.jpeg" alt="Jüri Üye 4" />
+          <p>Prof. Dr. Haluk Nami NOMER</p>
+        </div>
+        <div class="juri-uye">
+          <img src="../images/juri5.jfif" alt="Jüri Üye 5" />
+          <p>Prof. Dr. Baki İlkay Engin</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="sponsorlarimiz">
+      <h1 style="text-align: center">DESTEKÇİLERİMİZ</h1>
+      <div class="sponsorlogo">
+        <img src="../images/kizilyel.png" alt="" />
+        <img src="../images/ureyhukuk.png" alt="" />
+      </div>
+    </section>
+
+    <div id="apply" class="container">
+      <h2>Başvuru Formu</h2>
+      <form action="/" method="post">
+        <div class="form-group">
+          <label for="isim">Adınız:</label>
+          <input type="text" id="isim" name="isim" required />
+        </div>
+        <div class="form-group">
+          <label for="soyad">Soyadınız:</label>
+          <input type="text" id="soyisim" name="soyisim" required />
+        </div>
+        <div class="form-group">
+          <label for="mailadresi">E-mail Adresiniz:</label>
+          <input type="text" id="mailadresi" name="mailadresi" required />
+        </div>
+        <div class="form-group">
+          <label for="universite">Okuduğunuz Üniversite:</label>
+          <input type="text" id="universite" name="universite" required />
+        </div>
+        <div class="form-group">
+          <label for="sinif">Kaçıncı Sınıfsınız?:</label>
+          <select id="sinif" name="sinif" required>
+            <option value="">Seçiniz</option>
+            <option value="1">1. Sınıf</option>
+            <option value="2">2. Sınıf</option>
+            <option value="3">3. Sınıf</option>
+            <option value="4">4. Sınıf</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="phonenumber">Telefon Numaranız:</label>
+          <input type="text" id="phonenumber" name="phonenumber" required />
+        </div>
+
+        <div
+          style="display: flex; flex-direction: column; gap: 10px"
+          class="form-group"
+        >
+          <label for="belge">Gerekli Bilgiler</label>
+          <div style="display: flex; gap: 10px">
+            <input type="checkbox" name="belge" id="" required />
+            <a target="_blank" href="../1.pdf"
+              >VI. PROF. DR. M. KEMAL OĞUZMAN İSTANBUL HUKUK MAKALE YARIŞMASI
+              ŞARTNAMESİ</a
+            >
+          </div>
+          <div style="display: flex; gap: 10px">
+            <input type="checkbox" name="belge" id="" required />
+            <a target="_blank" href="../2.pdf">TEZ HAZIRLAMA YÖNERGESİ</a>
+          </div>
+          <div style="display: flex; gap: 10px">
+            <input type="checkbox" name="belge" id="" required />
+            <a target="_blank" href="../3.pdf"
+              >VI. PROF. DR. M. KEMAL OĞUZMAN İSTANBUL HUKUK MAKALE YARIŞMASI
+              YAZIM KILAVUZU</a
+            >
+          </div>
+          <div style="display: flex; gap: 10px">
+            <input type="checkbox" name="belge" id="" required />
+            <a target="_blank" href="../4.pdf">MAKALE KAPAĞI</a>
+          </div>
+
+          <div style="display: flex; gap: 10px">
+            <input type="checkbox" name="belge" id="" required />
+            <a target="_blank" href="../5.pdf">KVKK VE AYDINLATMA METNİ</a>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <input type="submit" value="Başvur" />
+        </div>
+      </form>
+    </div>
+
+    <section class="footer" id="contact">
+      <div class="footer-mail">
+        <i class="bi bi-envelope-at">ilsamakaleyarismasi@gmail.com </i>
+      </div>
+      <div class="footer-logolar">
+        <a href="https://www.instagram.com/ilsaistanbul/?hl=tr" target="_blank"
+          ><i class="bi bi-instagram"></i
+        ></a>
+        <a href="https://www.ilsaiuhf.com/" target="_blank"
+          ><i class="bi bi-globe2"></i
+        ></a>
+      </div>
+    </section>
+  </body>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        const target = document.querySelector(this.getAttribute("href"));
+        const offset = 100;
+
+        if (target) {
+          window.scrollTo({
+            top: target.offsetTop - offset,
+            behavior: "smooth",
+          });
+        }
+      });
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggleBtn = document.querySelector(".toggle-btn");
+      const navLinks = document.querySelector("nav ul");
+
+      toggleBtn.addEventListener("click", function () {
+        navLinks.classList.toggle("open");
+      });
+
+      // Dışarı tıklanınca menüyü kapat
+      document.addEventListener("click", function (e) {
+        const target = e.target;
+        const isNav = target.matches("nav") || navLinks.contains(target);
+        const isToggleBtn = target.matches(".toggle-btn");
+
+        if (!isNav && !isToggleBtn) {
+          navLinks.classList.remove("open");
+        }
+      });
+
+      // Bağlantılara tıklandığında menüyü kapat
+      navLinks.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", function () {
+          navLinks.classList.remove("open");
+        });
+      });
+    });
+  </script>
+</html>

@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&family=Roboto+Slab:wght@400;500&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+  font-family: "Roboto Slab", serif;
+  scroll-behavior: smooth;
+}
+
+.toggle-btn {
+  display: none;
+}
+
+body {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    176deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgb(34, 34, 34) 100%
+  );
+  padding-top: 100px;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  color: #ffc000;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  padding: 0px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+
+nav .logolar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 10px;
+}
+
+nav img {
+  width: 75px;
+  height: 75px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffc000;
+  font-size: 24px;
+  gap: 25px;
+}
+
+nav li:hover {
+  color: #ffbf00bd;
+}
+
+#hakkinda {
+  width: 100%;
+}
+
+#hakkinda .about {
+  width: 100%;
+}
+
+.about {
+  position: relative;
+}
+
+.about .terazifoto {
+  width: 100%;
+  height: 600px;
+  opacity: 60%;
+}
+
+.about .afis {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 100px;
+  width: 500px;
+  height: 500px;
+}
+
+.about .aboutext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 100px;
+  font-size: 18px;
+  color: white;
+}
+
+.juriler {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 70px;
+  color: white;
+}
+
+.juriler img {
+  border: 1px solid black;
+}
+
+.juri-baslik {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.juri-listesi {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.juri-uye {
+  margin: 10px;
+}
+
+.juri-uye img {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+
+.sponsorlarimiz {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 70px;
+  color: white;
+}
+
+.sponsorlogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.sponsorlarimiz img {
+  width: auto;
+  height: 90px;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px; /* Form genişliği */
+  max-width: 100%; /* Maksimum genişlik */
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group select {
+  width: calc(100% - 16px); /* Kenar boşlukları hesaba katarak genişlik */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-group input[type="submit"] {
+  background-color: #ffc000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-group input[type="submit"]:hover {
+  background-color: #ffc000;
+}
+
+.footer {
+  margin-top: 70px;
+  background-color: black;
+  padding: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer i {
+  color: #ffc000;
+  font-size: 1.1rem;
+}
+
+@media screen and (max-width: 1215px) {
+  body {
+    padding-top: 50px; /* Navigasyon çubuğunun yer kaplaması için padding artırıldı */
+  }
+
+  .toggle-btn {
+    display: inline;
+    background-color: #ffc000;
+    border: 0px;
+    color: white;
+    font-size: 24px;
+  }
+
+  nav {
+    height: auto; /* Mobil cihazlar için navigasyon çubuğu yüksekliği otomatik ayarlandı */
+    padding: 10px; /* Kenar boşlukları azaltıldı */
+  }
+
+  nav .logolar {
+    display: none; /* Logoları mobilde gizle */
+  }
+
+  .toggle-btn {
+    display: block; /* Açılır menü butonunu görünür yap */
+  }
+
+  nav ul {
+    display: none; /* Bağlantıları mobilde gizle */
+    flex-direction: column;
+    gap: 10px;
+    text-align: center; /* Bağlantıları merkezle */
+    font-size: 18px; /* Font boyutu düşürüldü */
+  }
+
+  nav ul.open {
+    display: flex; /* Açılır menüyü göster */
+  }
+
+  nav li {
+    padding: 10px 0; /* Bağlantılar arasındaki boşluklar ayarlandı */
+  }
+
+  .about {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about .terazifoto {
+    width: 100%;
+    height: 1000px;
+  }
+
+  .about .afis,
+  .aboutext {
+    position: absolute;
+  }
+
+  .about .afis {
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    height: 400px;
+  }
+
+  .about .aboutext {
+    top: 500px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    height: 400px;
+  }
+
+  .juri-listesi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
