@@ -232,6 +232,7 @@ nav li:hover {
 @media screen and (max-width: 1215px) {
   body {
     padding-top: 50px; /* Navigasyon çubuğunun yer kaplaması için padding artırıldı */
+    overflow-x: hidden;
   }
 
   .toggle-btn {
@@ -271,16 +272,20 @@ nav li:hover {
     padding: 10px 0; /* Bağlantılar arasındaki boşluklar ayarlandı */
   }
 
+  .hakkinda {
+    width: 100%;
+  }
+
   .about {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
 
   .about .terazifoto {
-    width: 100%;
     height: 1000px;
   }
 
@@ -305,10 +310,21 @@ nav li:hover {
     height: 300px;
   }
 
+  .sponsorlogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .juri-listesi {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .container {
+    width: 75%;
   }
 }
