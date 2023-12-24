@@ -293,16 +293,16 @@ nav li:hover {
     top: 30px;
     left: 50%;
     transform: translateX(-50%);
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
   }
 
   .about .aboutext {
     top: 500px;
     left: 50%;
     transform: translateX(-50%);
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
   }
 
   .juri-listesi {
