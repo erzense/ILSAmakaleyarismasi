@@ -118,36 +118,26 @@ nav li:hover {
 .juriler {
   text-align: center;
   padding: 20px;
-  margin-bottom: 70px;
+  margin-bottom: 30px;
   color: white;
 }
 
-.juriler img {
-  border: 1px solid black;
+.juriler .juri-uye {
+  margin-top: 30px;
 }
 
-.juri-baslik {
-  font-size: 24px;
-  margin-bottom: 20px;
+.juriler .juri-uye ul {
+  line-height: 40px;
+  width: 400px;
+  margin: 0 auto;
 }
 
-.juri-listesi {
+.juriler .juri-uye ul li {
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.juri-uye {
-  margin: 10px;
-}
-
-.juri-uye img {
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  margin-bottom: 5px;
+  justify-content: start;
+  align-items: center;
+  color: white;
 }
 
 .sponsorlarimiz {
@@ -311,13 +301,6 @@ nav li:hover {
   }
 
   .sponsorlogo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .juri-listesi {
     display: flex;
     flex-direction: column;
     justify-content: center;
