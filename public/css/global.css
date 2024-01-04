@@ -34,6 +34,10 @@ a {
   color: black;
 }
 
+.container a {
+  color: #ffc000;
+}
+
 nav {
   position: fixed;
   top: 0;
